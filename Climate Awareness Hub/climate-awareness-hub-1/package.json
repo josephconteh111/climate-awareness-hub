@@ -1,0 +1,26 @@
+{
+  "name": "climate-awareness-hub",
+  "version": "1.0.0",
+  "description": "A multi-page website focused on climate action, weather updates, environmental reporting, and education.",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "live-server public",
+    "build": "echo 'Build process not defined'",
+    "test": "echo 'No tests defined'"
+  },
+  "keywords": [
+    "climate",
+    "environment",
+    "weather",
+    "education",
+    "reporting"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

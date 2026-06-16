@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Education - Climate Awareness Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><a href="index.html">Climate Awareness Hub</a></div>
+    <div style="display:flex;gap:8px;align-items:center">
+      <button id="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <button id="theme-toggle" aria-pressed="false" aria-label="Toggle light and dark theme">🌙 <span class="label">Theme</span></button>
+    </div>
+    <nav id="main-nav" aria-label="Main navigation">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="weather.html">Weather</a></li>
+        <li><a href="report.html">Report Issue</a></li>
+        <li><a href="education.html" aria-current="page">Education</a></li>
+        <li><a href="solution.html">Solutions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Climate Education</h1>
+      <p class="lead">Learn about causes, effects and what communities in Sierra Leone can do to adapt and mitigate risks.</p>
+    </section>
+
+    <section>
+      <h2>What is Climate Change?</h2>
+      <p class="small">Climate change refers to long-term shifts in temperatures and weather patterns, primarily caused by human activities increasing greenhouse gases.</p>
+
+      <h3>Causes</h3>
+      <ul class="cards">
+        <li class="card"><span>🏭</span> <span class="card-text">Fossil fuel emissions — Burning coal, oil and gas releases CO₂ and other greenhouse gases. Reducing energy use and switching to clean energy lowers emissions.</span></li>
+        <li class="card"><span>🌲</span> <span class="card-text">Deforestation — Clearing forests reduces carbon storage and increases erosion. Protecting and restoring forests helps climate and livelihoods.</span></li>
+        <li class="card"><span>🚜</span> <span class="card-text">Agricultural practices — Some farming and livestock produce methane and nitrous oxide; sustainable farming reduces impacts while improving yields.</span></li>
+      </ul>
+
+      <h3 style="margin-top:12px">Effects</h3>
+      <p class="small">Rising temperatures increase extreme weather, sea-level rise, and changing rainfall patterns. This affects water supplies, food security, health, and infrastructure.</p>
+
+      <h3 style="margin-top:12px">Climate challenges in Sierra Leone</h3>
+      <p class="small">Sierra Leone faces heightened flood risk in coastal and riverine communities, erosion, and pressure on agriculture. Urban drainage and informal settlements are particularly vulnerable.</p>
+
+      <h3 style="margin-top:12px">Flood awareness & tips</h3>
+      <ul class="cards">
+        <li class="card"><span>🛟</span> <span class="card-text">Know evacuation routes — Learn local shelters and safe high ground.</span></li>
+        <li class="card"><span>🚰</span> <span class="card-text">Store clean water — Prepare safe water and purification options.</span></li>
+        <li class="card"><span>🧯</span> <span class="card-text">Secure valuables & documents — Keep copies in a waterproof bag.</span></li>
+      </ul>
+
+      <h3 style="margin-top:12px">Further learning & sources</h3>
+      <p class="small">For reliable information, consult IPCC reports, national meteorological services, and local NGOs. Link these sources and keep materials up to date.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Climate Awareness Hub</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/education.js"></script>
+</body>
+</html>

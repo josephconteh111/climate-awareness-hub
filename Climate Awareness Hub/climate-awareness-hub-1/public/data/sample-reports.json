@@ -1,0 +1,38 @@
+[
+    {
+        "reportId": 1,
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "location": "Freetown, Sierra Leone",
+        "issueType": "Flooding",
+        "description": "Severe flooding in the downtown area after heavy rains.",
+        "dateReported": "2023-10-01"
+    },
+    {
+        "reportId": 2,
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "location": "Bo, Sierra Leone",
+        "issueType": "Deforestation",
+        "description": "Illegal logging activities observed in the nearby forest.",
+        "dateReported": "2023-10-02"
+    },
+    {
+        "reportId": 3,
+        "name": "Samuel Kargbo",
+        "email": "samuel.kargbo@example.com",
+        "location": "Kenema, Sierra Leone",
+        "issueType": "Pollution",
+        "description": "Industrial waste being dumped into the river.",
+        "dateReported": "2023-10-03"
+    },
+    {
+        "reportId": 4,
+        "name": "Fatima Kamara",
+        "email": "fatima.kamara@example.com",
+        "location": "Makeni, Sierra Leone",
+        "issueType": "Waste Management",
+        "description": "Overflowing garbage bins in residential areas.",
+        "dateReported": "2023-10-04"
+    }
+]

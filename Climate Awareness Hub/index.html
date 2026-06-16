@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Climate Awareness Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link sr-only" href="#main-content">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <a href="index.html">Climate Awareness Hub</a>
+    </div>
+
+    <div class="header-controls" role="presentation">
+      <button id="menu-toggle" aria-expanded="false" aria-controls="main-nav" class="menu-toggle">☰ <span class="sr-only">Menu</span></button>
+      <button id="theme-toggle" aria-pressed="false" aria-label="Toggle light and dark theme" class="theme-toggle">🌙 <span class="label">Theme</span></button>
+    </div>
+
+    <nav id="main-nav" aria-label="Main navigation">
+      <ul class="nav">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="weather.html">Weather</a></li>
+        <li><a href="report.html">Report Issue</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="solution.html">Solutions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" class="container" role="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Taking Climate Action Together</h1>
+      <p class="lead">Practical tools for local weather awareness, environmental reporting and climate education — built for communities.</p>
+      <p style="margin-top:12px;">
+        <a class="cta" href="education.html">Learn more</a>
+        <a class="cta muted" href="report.html">Report an issue</a>
+      </p>
+    </section>
+
+    <section class="quick-weather card" aria-labelledby="weather-preview-title" style="margin-top:18px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+        <h2 id="weather-preview-title" class="small" style="margin:0">Quick Weather</h2>
+        <p class="small" style="margin:0;color:var(--muted)">Live preview — open full page for details</p>
+      </div>
+
+      <div class="weather-widget" role="region" aria-live="polite" style="margin-top:12px;">
+        <div class="w-location" aria-hidden="false">Detecting location…</div>
+
+        <div class="w-main" style="display:flex;align-items:center;gap:12px">
+          <div><span class="w-icon" aria-hidden="true">☀️</span></div>
+          <div>
+            <div class="w-temp" aria-hidden="false">--°C</div>
+            <div class="w-condition small" aria-hidden="false">--</div>
+          </div>
+        </div>
+
+        <div class="w-meta small" style="grid-column:1/-1;margin-top:8px">
+          <span class="w-humidity">Humidity: --%</span> · <span class="w-wind">Wind: --</span>
+        </div>
+
+        <div style="grid-column:1/-1;margin-top:12px;display:flex;gap:10px;align-items:center;">
+          <a class="cta" href="weather.html" title="Open full weather page">Open full weather page</a>
+          <a class="small" href="weather.html" aria-hidden="true">View live details & alerts</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards" aria-label="Quick actions" style="margin-top:20px;">
+      <article class="card" role="article" aria-labelledby="action-1">
+        <h3 id="action-1" class="small">Report issues</h3>
+        <p class="small">Quickly let local teams know about flooding, blocked drains or pollution. Your report helps communities respond faster.</p>
+        <p style="margin-top:8px"><a class="cta muted" href="report.html">Report now</a></p>
+      </article>
+
+      <article class="card" role="article" aria-labelledby="action-2">
+        <h3 id="action-2" class="small">Learn & prepare</h3>
+        <p class="small">Read practical tips on flood preparedness, safe water storage and community resilience.</p>
+        <p style="margin-top:8px"><a class="cta" href="education.html">Read guides</a></p>
+      </article>
+
+      <article class="card" role="article" aria-labelledby="action-3">
+        <h3 id="action-3" class="small">Community solutions</h3>
+        <p class="small">Small actions like tree planting and better waste management reduce local flood risks and build resilience.</p>
+        <p style="margin-top:8px"><a class="cta muted" href="solution.html">See solutions</a></p>
+      </article>
+    </section>
+
+    <!-- Community & Resources (professional home section) -->
+    <section class="home-info card" aria-labelledby="community-heading" style="margin-top:28px;">
+      <h2 id="community-heading" class="small" style="margin:0 0 12px 0">Community & Resources</h2>
+
+      <div class="home-info-grid">
+        <div class="home-brand">
+          <a class="brand-link" href="index.html">Climate Awareness Hub</a>
+          <p class="small" style="margin-top:8px">
+            Connecting people with local weather, practical education and an easy way to report environmental hazards. Built for community resilience.
+          </p>
+        </div>
+
+        <div class="home-links" aria-label="Quick links">
+          <h3 class="small">Quick links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="weather.html">Weather</a></li>
+            <li><a href="report.html">Report an issue</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="solution.html">Solutions</a></li>
+          </ul>
+        </div>
+
+        <div class="home-resources">
+          <h3 class="small">Resources</h3>
+          <ul>
+            <li><a href="https://www.ipcc.ch" target="_blank" rel="noopener">IPCC</a></li>
+            <li><a href="https://www.who.int" target="_blank" rel="noopener">WHO</a></li>
+            <li><a href="https://openweathermap.org" target="_blank" rel="noopener">OpenWeatherMap</a></li>
+          </ul>
+        </div>
+
+        <div class="home-newsletter">
+          <h3 class="small">Stay informed</h3>
+          <form id="home-newsletter" class="newsletter-form" onsubmit="event.preventDefault(); document.getElementById('home-newsletter-msg')?.classList.remove('hidden');">
+            <label class="small sr-only" for="home-newsletter-email">Email</label>
+            <div style="display:flex;gap:8px;align-items:center;">
+              <input id="home-newsletter-email" class="form-control" type="email" placeholder="you@example.com" aria-label="Email for newsletter" required />
+              <button class="cta small" type="submit">Subscribe</button>
+            </div>
+          </form>
+
+          <div id="home-newsletter-msg" class="small hidden" style="margin-top:8px">Subscribed (demo)</div>
+
+          <div class="social small" style="margin-top:12px" aria-hidden="false">
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="Facebook" style="margin-left:10px">📘</a>
+            <a href="#" aria-label="Instagram" style="margin-left:10px">📸</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo" aria-labelledby="footer-heading">
+    <div class="container footer-bottom small" id="footer-heading" style="margin-top:18px; padding-top:12px;">
+      <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
+        <div>© 2026 Climate Awareness Hub</div>
+        <div style="display:flex;gap:12px;align-items:center">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+    // Keep home weather preview static; weather.js runs on weather.html
+    (function () {
+      const wLoc = document.querySelector('.w-location');
+      if (wLoc) wLoc.textContent = '—';
+    })();
+  </script>
+</body>
+</html>

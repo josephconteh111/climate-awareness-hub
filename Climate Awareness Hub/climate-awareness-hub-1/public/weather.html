@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather - Climate Awareness Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/weather.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <!-- Include header content -->
+        <h1>Weather Information</h1>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="weather.html" aria-current="page">Weather</a></li>
+            <li><a href="report.html">Report Issue</a></li>
+            <li><a href="education.html">Education</a></li>
+        </ul>
+    </nav>
+
+    <main class="container" id="main-content">
+        <section id="weather-widget">
+            <h2>Current Weather</h2>
+            <div id="weather-info">
+                <p id="location"></p>
+                <p id="temperature"></p>
+                <p id="condition"></p>
+                <p id="wind-speed"></p>
+                <p id="humidity"></p>
+            </div>
+            <div id="weather-icon"></div>
+        </section>
+
+        <section id="flood-alert">
+            <h2>Flood Risk Alert</h2>
+            <p id="flood-risk-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Include footer content -->
+        <p>© 2026 Climate Awareness Hub</p>
+    </footer>
+
+</body>
+</html>

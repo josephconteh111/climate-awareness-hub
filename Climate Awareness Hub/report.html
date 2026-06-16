@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Report Issue — Climate Awareness Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><a href="index.html">Climate Awareness Hub</a></div>
+    <div style="display:flex;gap:8px;align-items:center">
+      <button id="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <button id="theme-toggle" aria-pressed="false" aria-label="Toggle light and dark theme">🌙 <span class="label">Theme</span></button>
+    </div>
+    <nav id="main-nav" aria-label="Main navigation">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="weather.html">Weather</a></li>
+        <li><a href="report.html" aria-current="page">Report Issue</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="solution.html">Solutions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="report-hero">
+      <h1 id="report-hero">Report an Environmental Issue</h1>
+      <p class="lead">Submit clear reports about hazards in your community. Photos and precise locations help responders.</p>
+    </section>
+
+    <!-- Single, professional report form (full width) -->
+    <section style="margin-top:18px;">
+      <form id="report-form" class="card" aria-labelledby="form-title" style="display:grid;gap:12px;max-width:840px;margin:0 auto;">
+        <h2 id="form-title" class="small">Submit a report</h2>
+
+        <div class="form-row">
+          <label class="form-label">Name
+            <input class="form-control" type="text" id="r-name" name="name" placeholder="Full name" required />
+          </label>
+
+          <label class="form-label">Email
+            <input class="form-control" type="email" id="r-email" name="email" placeholder="you@example.com" required />
+          </label>
+        </div>
+
+        <label class="form-label">Location
+          <input class="form-control" type="text" id="r-location" name="location" placeholder="Address, landmark or GPS coords" required />
+        </label>
+
+        <label class="form-label">Issue type
+          <select class="form-control" id="r-type" required>
+            <option value="">Select issue</option>
+            <option>Flooding</option>
+            <option>Illegal dumping</option>
+            <option>Water contamination</option>
+            <option>Deforestation</option>
+            <option>Other</option>
+          </select>
+        </label>
+
+        <label class="form-label">Description
+          <textarea class="form-control" id="r-desc" rows="6" placeholder="Describe what you saw, when it started and why it's a problem" required></textarea>
+        </label>
+
+        <label class="form-label file-label">
+          Photo (optional)
+          <input id="r-photo" class="file-input" type="file" accept="image/*" aria-label="Upload photo" />
+          <small class="small">Photos help verification — do not include identifiable personal data.</small>
+        </label>
+
+        <div style="display:flex;gap:10px;align-items:center;">
+          <button type="submit" class="cta">Submit Report</button>
+          <button type="button" id="report-reset" class="cta muted">Reset</button>
+          <div id="report-msg" class="small" aria-live="polite" style="margin-left:6px"></div>
+        </div>
+      </form>
+    </section>
+
+    <section class="card small" style="margin-top:14px;">
+      <h3>How reports are handled (demo)</h3>
+      <p class="small">This demo stores submissions in your browser only (LocalStorage) unless Firebase is configured. Avoid including highly sensitive personal information.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom small" style="margin-top:18px; padding-top:12px;">
+      <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
+        <div>© 2026 Climate Awareness Hub</div>
+        <div style="display:flex;gap:12px;align-items:center">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script type="module" src="js/firebase-init.js"></script>
+  <script type="module" src="js/report.js"></script>
+</body>
+</html>

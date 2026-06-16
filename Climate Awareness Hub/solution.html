@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Solutions - Climate Awareness Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><a href="index.html">Climate Awareness Hub</a></div>
+    <div style="display:flex;gap:8px;align-items:center">
+      <button id="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <button id="theme-toggle" aria-pressed="false" aria-label="Toggle light and dark theme">🌙 <span class="label">Theme</span></button>
+    </div>
+    <nav id="main-nav" aria-label="Main navigation">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="weather.html">Weather</a></li>
+        <li><a href="report.html">Report Issue</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="solution.html" aria-current="page">Solutions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" id="main-content">
+    <section>
+      <h1>Solutions</h1>
+      <p class="lead">Actions communities and individuals can take to reduce climate impacts and increase resilience.</p>
+
+      <ul class="cards" aria-label="Climate solutions">
+        <li class="card">
+          <div>
+            <strong>Plant Trees & Restore</strong>
+            <div class="small">Restore mangroves and forests to stabilize coasts and absorb carbon. Community planting programs with native species give long-term benefits.</div>
+          </div>
+        </li>
+
+        <li class="card">
+          <div>
+            <strong>Reduce, Reuse, Recycle</strong>
+            <div class="small">Minimize waste, set up collection points and encourage reuse. Proper waste management reduces blockages that cause flooding.</div>
+          </div>
+        </li>
+
+        <li class="card">
+          <div>
+            <strong>Adopt Renewable Energy</strong>
+            <div class="small">Solar and small-scale renewables reduce reliance on diesel and kerosene, lowering emissions and improving local energy access.</div>
+          </div>
+        </li>
+
+        <li class="card">
+          <div>
+            <strong>Improve Drainage & Waste Management</strong>
+            <div class="small">Maintain drains, clear blockages and design green infrastructure to reduce flood impact — community-led maintenance is effective.</div>
+          </div>
+        </li>
+      </ul>
+
+      <section style="margin-top:12px" class="small">
+        <h3>Getting started</h3>
+        <p class="small">Start with small, locally led projects: community clean-ups, tree nurseries, and mapping vulnerable areas. Partner with local authorities and NGOs for training and funding.</p>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Climate Awareness Hub</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

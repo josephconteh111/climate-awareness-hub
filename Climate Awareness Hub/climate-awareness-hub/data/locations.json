@@ -1,0 +1,40 @@
+{
+  "locations": [
+    {
+      "name": "Amazon Rainforest",
+      "country": "Brazil",
+      "coordinates": {
+        "latitude": -3.4653,
+        "longitude": -62.2159
+      },
+      "description": "The Amazon Rainforest is the largest tropical rainforest in the world, known for its biodiversity."
+    },
+    {
+      "name": "Great Barrier Reef",
+      "country": "Australia",
+      "coordinates": {
+        "latitude": -18.2871,
+        "longitude": 147.6992
+      },
+      "description": "The Great Barrier Reef is the world's largest coral reef system, home to a diverse range of marine life."
+    },
+    {
+      "name": "Sahara Desert",
+      "country": "Multiple",
+      "coordinates": {
+        "latitude": 23.4162,
+        "longitude": 25.6628
+      },
+      "description": "The Sahara Desert is the largest hot desert in the world, known for its extreme conditions."
+    },
+    {
+      "name": "Mount Everest",
+      "country": "Nepal",
+      "coordinates": {
+        "latitude": 27.9881,
+        "longitude": 86.9250
+      },
+      "description": "Mount Everest is the highest mountain in the world, attracting climbers from around the globe."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather - Climate Awareness Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="weather-page">
+  <header class="site-header">
+    <div class="brand"><a href="index.html">Climate Awareness Hub</a></div>
+    <button id="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" aria-label="Main navigation">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="weather.html" aria-current="page">Weather</a></li>
+        <li><a href="report.html">Report Issue</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="solution.html">Solutions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" id="weather-app">
+    <section class="hero">
+      <h1>Local Weather</h1>
+      <p class="lead">Auto-detect your location or search a city. Live weather, dynamic backgrounds and flood risk alerts.</p>
+    </section>
+
+    <section class="weather-controls" aria-label="Weather controls" style="margin-bottom:16px;">
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <input id="city-input" type="search" placeholder="Search city (e.g. Freetown)" aria-label="City" />
+        <button id="search-btn" class="cta">Search</button>
+        <button id="detect-btn" class="cta muted">Detect Location</button>
+      </div>
+    </section>
+
+    <section class="weather-card" role="region" aria-live="polite">
+      <div id="alert" class="card hidden" style="background:linear-gradient(90deg,#ffefef,#fff4f0); color:#610000"></div>
+
+      <div class="card" id="weather-display" style="display:flex;flex-direction:column;gap:8px;">
+        <div class="align-center">
+          <div style="flex:1;">
+            <div class="w-location" id="w-location">—</div>
+            <div class="w-main">
+              <span class="w-icon" id="w-icon">—</span>
+              <span class="w-temp" id="w-temp">--°C</span>
+            </div>
+            <div class="w-meta small">
+              <span id="w-condition">—</span> · <span id="w-humidity">Humidity: --%</span> · <span id="w-wind">Wind: -- m/s</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="small" style="margin-top:8px">Data from OpenWeatherMap. <a href="https://openweathermap.org" target="_blank" rel="noopener">Learn more</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Climate Awareness Hub</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/weather.js"></script>
+</body>
+</html>

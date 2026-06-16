@@ -1,0 +1,55 @@
+{
+  "location": "New York",
+  "temperature": {
+    "current": 22,
+    "unit": "C"
+  },
+  "weather": {
+    "description": "Clear sky",
+    "icon": "01d"
+  },
+  "wind": {
+    "speed": 5,
+    "unit": "km/h"
+  },
+  "humidity": 60,
+  "forecast": [
+    {
+      "day": "Monday",
+      "temperature": {
+        "high": 25,
+        "low": 18
+      },
+      "weather": {
+        "description": "Partly cloudy",
+        "icon": "02d"
+      }
+    },
+    {
+      "day": "Tuesday",
+      "temperature": {
+        "high": 27,
+        "low": 19
+      },
+      "weather": {
+        "description": "Sunny",
+        "icon": "01d"
+      }
+    },
+    {
+      "day": "Wednesday",
+      "temperature": {
+        "high": 24,
+        "low": 20
+      },
+      "weather": {
+        "description": "Rain showers",
+        "icon": "09d"
+      }
+    }
+  ],
+  "floodRisk": {
+    "alert": false,
+    "message": "No flood risk at this time."
+  }
+}
